@@ -32,7 +32,7 @@ def position_taken?(board, index)
   end
 end
 
-def turn
+def turn(board)
   display_board(board)
   puts "Input move"
   number = gets
@@ -41,6 +41,6 @@ def turn
     turn(board)
   else
     move(board, index)
-    display_board
+    display_board(board)
   end
 end
